@@ -73,7 +73,7 @@ for (let i = 0; i < speciesList.length; i++) {
 2. Scaling Data with Logarithms
 When the data you’re working with has large differences between the smallest and largest values (like bird counts), using logarithms can help scale them down to a more manageable size.
 
-![Log vs Linear scales.](log.png)
+![Log vs Linear scales.](image-1.png)
 
 What it does: The `log()` function returns the logarithm of a number. This is useful for scaling large values so they’re visually easier to represent.
 Example:
