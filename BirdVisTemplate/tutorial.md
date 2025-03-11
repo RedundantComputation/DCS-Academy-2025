@@ -15,8 +15,9 @@ One of the most important things you’ll need to do is randomly pick species or
 What it does: Generates a random number. You can specify a range of numbers, and it will return a number within that range.
 
 Example:
-random(10, 20) would give you a random number between 10 and 20.
-random(255) gives you a random number between 0 and 255.
+`random(10, 20)`would give you a random number between 10 and 20.
+`random(255)` gives you a random number between 0 and 255.
+
 This will be useful for randomly selecting species or generating random colors.
 
 ## `floor()`
@@ -27,6 +28,7 @@ What it does: Rounds a number down to the nearest whole number.
 Example:
 `floor(3.7)` will return 3.
 `floor(random(10))` will return a random integer between 0 and 9, without any decimal part.
+
 This is useful for situations where you need to work with whole numbers, like when you want to pick a random index in a list (e.g., selecting a species randomly from an array).
 
 ## `includes()`
@@ -36,6 +38,7 @@ What it does: Returns true if the item is in the array, and false if it’s not.
 
 Example:
 `selectedSpecies.includes(speciesName)` will check if the species is already in the `selectedSpecies` array.
+
 This will help you ensure that each species you pick is unique.
 
 ## `push()`
@@ -55,6 +58,7 @@ What it does: Creates a color based on red, green, and blue (RGB) values, along 
 Example:
 `let myRed = color(255, 0, 0)` creates a pure red color and saves it in the `myRed` variable.
 `color(100, 150, 200, 150)` creates a semi-transparent color.
+
 Each species will get a random color, so it’s important to understand how to generate these.
 
 ## `map()`
@@ -64,7 +68,8 @@ What it does: Maps a number from one range to another. This is super helpful whe
 
 Example:
 `map(5, 0, 10, 0, 100)` will map the value 5 (from the range 0-10) to the range 0-100, so the result would be 50.
-You’ll use `map()` to convert data, like bird counts, into positions or sizes on the screen.
+
+You’ll use `map()` to convert data into positions or sizes on the screen.
 
 ## `max()`
 When you’re working with different data values, you often need to know the highest value. The `max()` function will help you do that.
@@ -73,6 +78,7 @@ What it does: Returns the highest number from a set of values.
 
 Example:
 `max([10, 20, 30])` would return 30.
+
 You can use this to find the highest bird count, which will help you scale your circles so that the largest counts are represented by the biggest circles.
 
 ## Concepts You'll Use
