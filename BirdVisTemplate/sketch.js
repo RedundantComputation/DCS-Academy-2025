@@ -21,7 +21,7 @@ function selectSpecies(count) { // Randomly select a certain number of species
   let totalSpecies = table.getRowCount();
   let selectedIndices = [];
   while (selectedIndices.length < count) { // Keep looping until we have selected enough species
-
+      // TO DO
   }
 }
 
@@ -64,7 +64,10 @@ function draw() { // The main function where all the visualization happens!
   textSize(16);
   textAlign(CENTER);
   for (let i = 0; i < monthNames.length; i++) {
-    // To-Do Together: Let's add lines and labels for each month!
+    let currentMonth = monthNames[i];
+    let x = map(i*4, 0, 48, margin * 2, width - margin);
+
+    text(currentMonth, x, margin);
   }
 
   // Iterate through each of the species and draw them
