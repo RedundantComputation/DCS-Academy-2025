@@ -19,6 +19,16 @@ random(10, 20) would give you a random number between 10 and 20.
 random(255) gives you a random number between 0 and 255.
 This will be useful for randomly selecting species or generating random colors.
 
+## `floor()`
+Sometimes, you may need to round numbers down to the nearest integer. The `floor()` function will do that for you.
+
+What it does: Rounds a number down to the nearest whole number.
+
+Example:
+`floor(3.7)` will return 3.
+`floor(random(10))` will return a random integer between 0 and 9, without any decimal part.
+This is useful for situations where you need to work with whole numbers, like when you want to pick a random index in a list (e.g., selecting a species randomly from an array).
+
 ## `includes()`
 Sometimes, when you’re picking random items (like species), you don’t want to pick the same item twice. The includes() function checks if a specific item is already in an array.
 
@@ -27,6 +37,15 @@ What it does: Returns true if the item is in the array, and false if it’s not.
 Example:
 `selectedSpecies.includes(speciesName)` will check if the species is already in the `selectedSpecies` array.
 This will help you ensure that each species you pick is unique.
+
+## `push()`
+In p5.js, you’ll often need to add items to an array, and the `push()` function allows you to do that easily.
+
+What it does: Adds one or more elements to the end of an array.
+
+Example:
+`myArray.push("new item")` will add "new item" to the end of the `myArray` array.
+`speciesList.push(speciesName)` would add a randomly selected species name to the `speciesList`.
 
 ## `color()`
 Previously, when using functions like `background()` or `fill()` we passed 3 or 4 separate numbers. But what if we want to reuse the same color over and over? Instead of passing separate values, we can save a color as a variable using `color()`.
