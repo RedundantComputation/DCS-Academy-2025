@@ -106,7 +106,7 @@ Example:
 
 You’ll likely use this to scale the sizes of the circles so that the data is easier to read.
 
-Putting It All Together
+## Putting It All Together
 Here’s a quick recap of the functions and concepts you’ll need to complete your visualization:
 
 Random Selection: Use `random()` to randomly choose species and generate colors. Make sure the species you choose are unique by using `includes()` to check if they’ve already been picked.
