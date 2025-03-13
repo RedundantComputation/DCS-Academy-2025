@@ -1,5 +1,6 @@
 // This template has 7 tasks for you to complete. Each task is marked with a TO-DO comment.
 // I recommend going in this order:
+// 0. Look at the data and understand its structure/attributes
 // 1. Load the stock data from CSV files in preload()
 // 2. Populate the prices array with the stock prices in drawStockChart()
 // 3. Label the top and bottom values of the Y-axis
