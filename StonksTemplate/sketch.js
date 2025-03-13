@@ -78,6 +78,7 @@ function drawStockChart(stock, table, x, y, w, h) {
     let priceRange = maxPrice - minPrice;
     // Here, we compute adjustedMin/Max so that the line chart doesn't go all the way to the edges of the y-axis.
     // This makes things look nicer, especially when we add the min/max points.
+    // When using map() to convert prices to coordinates, we'll use adjustedMin and adjustedMax instead of minPrice and maxPrice.
     let buffer = priceRange * 0.1;
     let adjustedMin = minPrice - buffer;
     let adjustedMax = maxPrice + buffer;
@@ -103,7 +104,7 @@ function drawStockChart(stock, table, x, y, w, h) {
         line(px, y + h, px, y + h + 5); // Tick mark
     }
     
-    // TO-DO: Label the top and bottom values of the Y-axis
+    // TO-DO: Label the top and bottom values (adjustedMin/Max) of the Y-axis
     
     // TO-DO: Calculate the mean price of the stock
     let meanPrice;
@@ -121,13 +122,15 @@ function drawStockChart(stock, table, x, y, w, h) {
     noFill();
     stroke(50, 150, 50);
     beginShape();
+
     // TO-DO: Draw the line chart for the stock prices
+    
     endShape();
     
     // TO-DO: Find the index of the minimum and maximum prices in the prices array
     let minIndex;
     let maxIndex;
-    // TO-DO: Using the indices, compute the coordinates for the minimum and maximum price points
+    // TO-DO: Using the indices and prices, compute the coordinates for the minimum and maximum price points
     let minX;
     let minY;
     let maxX;
